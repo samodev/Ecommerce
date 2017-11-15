@@ -1,0 +1,49 @@
+.top-bar, .top-bar ul {
+  background-color: $nav-background;
+}
+
+.top-bar {
+  .menu-text {
+    color: $nav-text-color;
+  }
+  .menu > .menu-text > a {
+    display: inline;
+    padding: 0;
+  }
+  .active-link {
+    font-weight: bold;
+  }
+}
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+}
+
+#active_page_number {
+  padding: 15px;
+  border: 1px solid #CCC;
+  margin-right: 0.3em;
+  user-select: none;
+  font-size: 1.2em;
+  background-color: #666;
+}
+
+#page-numbers > a {
+  padding: 15px;
+  border: 1px solid #CCC;
+  margin-right: 0.3em;
+  color: blue;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+#page-numbers > a.current {
+  z-index: 3;
+  color: #23527c;
+  background-color: purple;
+  border-color: #ddd;
+}
+
+#page-numbers > a:hover:not(.active) {background-color: #ddd;}
